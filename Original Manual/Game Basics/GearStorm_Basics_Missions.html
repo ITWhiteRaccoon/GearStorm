@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="missions.css?v=1.0">
+</head>
+<body>
+    <div Class="Main">
+        <div Class="Column" id="Dialog">
+          <h3 class="DialogText">
+            Missions</h3>
+          <p>
+GearStorm Quest Scripting Guide<p>
+
+Welcome to the exciting world of GearStorm Quest Editing. As a Game Admin you will have access to shape your world, configure your NPCs and their behavior and create intricate experiences for players.  So, let’s jump right in.<p>
+
+First, Quests in GearStorm are a little different. Quests and NPC dialog are part of the same system, interacting with NPCs is the main (but not only) way quests move forward in GearStorm.  Quests are made up of Stages, and each Stage usually has one or more player dialog Responses that may be available if certain conditions are met.<p>
+
+To start, just Context Activate (Alt-E, or Alt-Middle Mouse) any Base Core and select Quests.<p><img src="../Images/Missions_Quest_Editor.png" width="676" height="345" alt=""/>
+
+<p>This will bring up the Quest Editor. Quests are made up of several components.<br>
+  <ul>
+    <li>Name: The name of the Quest as displayed in Dialog</li>
+    <li> Tags: Strings that tell NPCs and other objects to make this Quest available in the Dialog. NPCs have editable tags as well. </li>
+    <li> Accessible by admins through their Context Menu (Alt-E)</li>
+    <li> Stages: States in the quest, when a quest evaluates in a Dialog, the Dialog will pick the first Stage which has a condition that evaluates to true.</li>
+    <li>  Responses: Each stage has an array of responses, these are buttons the player can press IF the response condition evaluates to true.  Once selected by the player, the Response Execution runs.</li>
+    <li> Conditions: A set of test commands to evaluate world and player conditions.</li>
+    <li> Executions: A set of script commands that invoke changes to the player and the world.</li>
+    <li>  Texts: Strings displayed as statements from NPCs or as Responses from the player.</li>
+    <li> Set: When the quest is started and how often. </li>
+    </ul>
+  <p> When a player initiates dialog.  The player is presented with a list of quests to discuss with an NPC.  This list is created based on the Quest Tags that match the NPCs Tags.</p>
+  <p><img src="../Images/Missions_NPC_Tags.png" width="419" height="301" alt=""/>
+    <p>Once the player picks a quest to discuss.  The Quest Manager will evaluate each stage’s Condition until it finds one that is true.  It will then display that Stage’s text along with a list of Responses. Each response also has a condition. The player only has the response option if the response conditions are met. E.g. To turn in a quest item.
+    <p>
+
+If the player then selects a response, the response’s Execution is run.  This can change variables, add or remove items from player inventory and many other things that change the game environment.  Once this is done, the execution can either close the dialog or the stage selection process if repeated.<p>
+
+Conditions and Executions have differing sets of commands. More listed on the next Page.<p>
+
+<strong>Quest Sets: </strong>This is important.  When a quest starts is determined by the Quest Set variable.<br>
+<ul>
+  <li>None: The quest will never start, used for quests under development</li>
+  <li> Manual: The Quest can only be started from a script</li>
+  <li> Random: The quest will start randomly, added to the list of available random quests</li>
+  <li> Rare:  The quest will start randomly, but much less frequently than other random quests</li>
+  <li> Startup: Start Immediately and every time the server starts</li>
+</ul>
+<h4>
+  
+  Condition Statements</h4>
+<p>
+
+Condition statements exist to test game and player state. Statements can be compound, that is multiple conditions can be added to a statement.  These are separated by a Semicolon “;” or New Line. If statements are compound, all must be true for the condition to be true. Blank statements always evaluate to true. Any line that is non-zero is considered to be true. Conditions are not case sensitive.
+<h4>
+  
+  Condition Functions</h4>
+<ul>
+  <li>  IsDay  - Returns true if is daylight, else false</li>
+  <li> IsNight – Returns true if dark, else false</li>
+  <li> GetSunlightLevel – Returns brightness of sunlight, 0=False for night</li>
+  <li> HasItem [Item_Name / Item#] [#Count]  - Returns count of item in player inventory if >= #Count else returns 0</li>
+  <li> PlayerStat [StatName]  - Returns the number of the player stat, available StatNames are
+    <ul>
+      <li> HEALTH	HEALTHRATIO	MAXHEALTH</li>
+      <li> STAMINA	STAMINARATIO	MAXSTAMINA</li>
+      <li> SHIELD	SHIELDRATIO	MAXSHIELD</li>
+      <li> ARMOR	ARMORRATIO	MAXARMOR</li>
+      <li> POWER	POWERRATIO	MAXPOWER  </li>
+    </ul>
+  </li>
+  </ul>
+<h4>
+  
+  Variables<br>
+</h4>
+<p>$[VarName] - Variable indicator,  Variables are set in the Execution stage and can be referenced here
+  <h4>
+    
+    Operators<br>
+  </h4>  
+  <p>[+,-,*,/,!,%,&] operators can be used in conjunction with Variables and other Condition functions  
+  <h4>
+    
+    Comparison operators</h4>
+  <p>    [=,==,>,<,>=,<=,!=] These are evaluated after other functions to produce true/false values.  
+
+Examples:<br>
+  <ul>
+    <li>$MyHealthVar >= PlayerStat Health;</li>
+    <li>      HasItem Gold_Ore $MinimumGoldOre  </li>
+  </ul>
+  <h4>
+    
+    Execution Statements<br>
+  </h4>
+  <p>Execution statements make things happen in the game or to the player. Like condition statements, these are separated by a Semicolon “;” or New Line. Execution statements are not case sensitive.
+    <h4>
+      
+      Execution Functions<br>
+    </h4>    
+    <ul>
+      <li>Close – Closes Dialog Menu</li>
+      <li> SetMenuMode [Mode] changes to a separate menu mode.  Currently available modes are:
+        <ul>
+          <li> INVENTORY	MERCHANT</li>
+        </ul>
+      </li>
+      <li>        RemoveItem [Item_Name / Item#] [#Count] - Removes up to Count items from Player’s Inventory</li>
+      <li> AddItem [Item_Name / Item#] [#Count] - Gives player Count of items</li>
+      <li> AddCoins [#Count] - Gives Count # of XI coins</li>
+      <li> Transmit [#Channel] - Sends a signal on this channel [Not Complete Yet]</li>
+      <li> Spawn [Item_Name/ Item #] [Location] Spawns actor if possible at location, More on location options later</li>
+      <li> Set [VarName] [Value] Defines a variable, Condition functions can be used to determine Value</li>
+      <li> StartQuest [QuestName] Starts a Manual quest based on its Name string (use “_” for spaces in Quest Name) </li>
+      </ul>
+    <h4>Location Designation<br>
+      </h4>
+    <ul>
+      <li>[No args]     -Returns Player Location</li>
+      <li> [X] [Y]       -Returns Vector at Voxel of heightmap</li>
+      <li> [X] [Y] [Z]   -Returns Vector at Voxel</li>
+      <li> RADIUS [X]    -Randomly selects location X Radius of Player in Unreal Units</li>
+      <li> POLAR [X] [Y] -Finds point at Angle X with Radius Y</li>
+    </ul>
+    <p>
+      
+      Examples:<br>
+      <ul>
+        <li>SetMenuMode Merchant</li>
+        <li> AddItem Gold 2</li>
+        <li> Set $MyVar PlayerStat Health </li>
+      </ul>
+      <p>
+        
+        Missions are one of the key features of GearStorm. There are a built-in number of missions available in the game, however, gamemasters will also be able to create and develop their own missions.
+      </p></div>
+
+        <div Class="Column" id="ImageColumn"></div>
+        <div class="padder"></div>
+    </div>
+</body>
+</html>
