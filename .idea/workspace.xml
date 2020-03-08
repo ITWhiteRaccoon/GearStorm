@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cef2d0dc-3706-463e-a049-ae54eeafbbbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/guide_files/css/theme/card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/About.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guide_files/css/GearStorm.css" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/css/GearStorm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guide_files/css/GearStorm.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/css/GearStorm.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guide_files/css/GearStorm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/css/GearStorm.scss" afterDir="false" />
@@ -54,10 +54,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="103" y="185" width="725" height="628" key="EditFileWatcherDialog" timestamp="1583598398695">
+    <state x="185" y="76" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583685898691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="103" y="185" width="725" height="628" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1583598398695" />
+    <state x="185" y="76" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1583685898691" />
+    <state x="103" y="185" width="725" height="628" key="EditFileWatcherDialog" timestamp="1583686054435">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="103" y="185" width="725" height="628" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1583686054435" />
     <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1583610909187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -66,11 +70,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="431" y="449" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583447074394" />
-    <state x="0" y="72" key="SettingsEditor" timestamp="1583675175603">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="0" y="57" key="SettingsEditor" timestamp="1583686056461">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583598400251" />
+    <state x="0" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583686056461" />
     <state x="0" y="72" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583675175603" />
+    <state x="59" y="141" key="scopes" timestamp="1583686042067">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="59" y="141" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1583686042067" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583670786909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
