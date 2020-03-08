@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-family: Primus, Century Gothic, Avant Garde, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 }
 
 @font-face {
@@ -15,75 +15,75 @@ body {
     background-color: rgb(27, 32, 34);
     color: white;
     overflow-x: hidden;
-    font-family:Primus;
+    font-family: Primus;
 }
 
-a:link{
-  color: orange;
+a:link {
+    color: orange;
 }
 
-a:visited{
-  color: yellow;
+a:visited {
+    color: yellow;
 }
 
 a:hover {
-  color: red;
+    color: red;
 }
 
 .Column {
     float: left;
-     padding: 0.5vw;
+    padding: 0.5vw;
 }
 
 .DialogText {
-    color:white;
-    font-size:2vw;
-    font-family:Primus, Century Gothic, Avant Garde, sans-serif;
+    color: white;
+    font-size: 2vw;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 }
 
 .DialogText b {
-    color:white;
-    font-size:2vw;
+    color: white;
+    font-size: 2vw;
     font-weight: bold;
-    font-family:Primus, Century Gothic, Avant Garde, sans-serif;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 
 }
 
 .HelpText {
-    color:white;
-    font-size:1.5vw;
-    font-family:Primus, Century Gothic, Avant Garde, sans-serif;
+    color: white;
+    font-size: 1.5vw;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 }
 
 .HelpText b {
-     color:white;
-    font-size:1.5vw;
+    color: white;
+    font-size: 1.5vw;
     font-weight: bold;
-    font-family:Primus, Century Gothic, Avant Garde, sans-serif;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 
 }
 
 .HelpText h1 {
-    font-size:2.5vw;
+    font-size: 2.5vw;
     font-weight: bold;
-    font-family:Primus, Century Gothic, Avant Garde, sans-serif;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 }
 
 .HelpText h2 {
-    font-size:2vw;
+    font-size: 2vw;
     font-weight: bold;
-    font-family:Primus, Century Gothic, Avant Garde, sans-serif;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 }
 
 .HelpText h3 {
-    font-size:1.5vw;
+    font-size: 1.5vw;
     font-weight: bold;
-    font-family:Primus, Century Gothic, Avant Garde, sans-serif;
+    font-family: Primus, Century Gothic, Avant Garde, sans-serif;
 }
 
 .HelpText ul {
-  list-style-type: square;
-  padding: 2px;
+    list-style-type: square;
+    padding: 2px;
 }
 
 .HelpText li {
@@ -93,7 +93,7 @@ a:hover {
 
 #Dialog {
     width: 55vw;
-    height:auto;
+    height: auto;
 }
 
 #ImageColumn {
@@ -102,19 +102,19 @@ a:hover {
 
 #FullColumn {
     width: 95vw;
-    height:auto;
+    height: auto;
 }
 
 .DialogImg {
     height: auto;
-    width:inherit;
+    width: inherit;
 }
 
 .Main {
     width: 100vw;
     display: inline-block;
     margin-right: 50px;
-   
+
 }
 
 .padder {
@@ -124,7 +124,7 @@ a:hover {
     right: -2rem;
     width: 2rem;
     height: 1px;
-   
+
 }
 
 .spacer {

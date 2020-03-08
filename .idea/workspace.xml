@@ -2,44 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cef2d0dc-3706-463e-a049-ae54eeafbbbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/eduar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GearStorm_Manual_Index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Building.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Crafting_Items.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Creatures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Gear.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Items.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Lore.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Missions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Power Armor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Quests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Resources.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Vehicles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Weapons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/GearStorm_Basics_Zombies.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/GearStorm_About.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/GearStorm_Release_Date.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/GearStorm_System_Requirements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Guides/GearStorm_Guides_Default_Keys.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Guides/GearStorm_Guides_How_To_Play.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Guides/GearStorm_Guides_Running_Dedicated_Server.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Apollyon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Earth_Defense_Initiative.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_International_Colonization_Authority.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Martian_Science_Foundation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Northpoint.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Official_Timeline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Phage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_ShortStory_Day_1_Reboot_Humanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_ShortStory_Day_500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_ShortStory_Last_Day_At_ICA.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_ShortStory_We_Dont_Believe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Sol-Terra_Expedition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Story_of_Gearstorm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Vanguard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/GearStorm_Lore_Wake_Station.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide_files/css/GearStorm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/css/GearStorm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/About.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Building.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Building.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Crafting_Items.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Crafting_Items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Creatures.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Creatures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Gear.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Gear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Items.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Missions.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Missions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Power Armor.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Power Armor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Quests.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Quests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Resources.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Vehicles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Weapons.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Weapons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Zombies.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Basics_Zombies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Game Basics/Missions.css" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Game Basics/Missions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Guides/Guides_Default_Keys.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Guides/Guides_Default_Keys.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Guides/Guides_How_To_Play.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Guides/Guides_How_To_Play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Guides/Guides_Running_Dedicated_Server.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Guides/Guides_Running_Dedicated_Server.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Apollyon.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Apollyon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Earth_Defense_Initiative.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Earth_Defense_Initiative.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_International_Colonization_Authority.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_International_Colonization_Authority.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Martian_Science_Foundation.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Martian_Science_Foundation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Northpoint.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Northpoint.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Official_Timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Official_Timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Phage.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Phage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_Day_1_Reboot_Humanity.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_Day_1_Reboot_Humanity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_Day_500.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_Day_500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_Last_Day_At_ICA.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_Last_Day_At_ICA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_We_Dont_Believe.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_ShortStory_We_Dont_Believe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Sol-Terra_Expedition.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Sol-Terra_Expedition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Story_of_Gearstorm.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Story_of_Gearstorm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Vanguard.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Vanguard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Wake_Station.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Lore_Wake_Station.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore Pages/Missions.css" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore Pages/Missions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Lore.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Lore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/Release_Date.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/Release_Date.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/System_Requirements.html" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/System_Requirements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/css/GearStorm.css" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/css/GearStorm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide_files/css/GearStorm.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/guide_files/css/GearStorm.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
       <workItem from="1583597487479" duration="1377000" />
       <workItem from="1583608164136" duration="2747000" />
       <workItem from="1583628319829" duration="671000" />
-      <workItem from="1583665423766" duration="2244000" />
+      <workItem from="1583665423766" duration="8057000" />
     </task>
     <servers />
   </component>
@@ -103,5 +107,9 @@
     </state>
     <state x="0" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583598400251" />
     <state x="0" y="72" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583666704079" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583670786909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583670786909" />
   </component>
 </project>
