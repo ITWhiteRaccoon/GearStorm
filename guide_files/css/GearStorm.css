@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: Primus;
-  src: url("../_font/Primus-Regular.otf");
+  src: url("../font/Primus-Regular.otf");
 }
 /* ========================================================================
    Component: Base
@@ -3381,7 +3381,7 @@ select.uk-form-width-xsmall {
  * Note: Header and Footer are only implemented for the default style
  */
 .uk-card-default {
-  background: #333333f5;
+  background: #111111e0;
   color: #666;
   border: solid 1px #fff;
   color: #ddd;
