@@ -1,6 +1,13 @@
-$global-font-family: Primus, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$global-background  : #333;
+$global-border      : #222;
+$global-font-family : Primus, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$navbar-background  : #222;
+
+$cut                : 15px;
+$clip               : polygon(100% 0%, 100% calc(100% - #{$cut}), calc(100% - #{$cut}) 100%, 0 100%, 0 #{$cut}, #{$cut} 0);
 
 @font-face {
-  font-family: Primus;
-  src: url('../font/Primus-Regular.otf');
+  font-family : Primus;
+  src         : url('../font/Primus-Regular.otf');
 }

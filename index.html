@@ -5,25 +5,52 @@
     <title>The HTML5 Herald</title>
     <meta content="The HTML5 Herald" name="description">
     <link href="guide_files/css/GearStorm.css" rel="stylesheet">
+    <script src="guide_files/js/uikit.js"></script>
+    <script src="guide_files/js/uikit-core.js"></script>
 </head>
-<body style="background-image: url(guide_files/Images/Backgrounds/GS-Steven-bridge.png); height: 100vh"
-      class="uk-background-cover uk-background-fixed uk-overflow-hidden">
+<body>
+<header>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container uk-navbar" uk-navbar>
+            <div class="uk-navbar-center">
+                <div class="uk-navbar-center-left">
+                    <div>
+                        <ul class="uk-navbar-nav">
+                            <li><a href="">Game Basics</a></li>
+                            <li><a href="">Guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="index.html" class="uk-navbar-item uk-logo">
+                    Logo<!--<img data-src="guide_files/Images/Logo.png" alt="GearStorm Logo" uk-img>-->
+                </a>
+                <div class="uk-navbar-center-right">
+                    <div>
+                        <ul class="uk-navbar-nav">
+                            <li><a href="">Requirements</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
 <main class="uk-container uk-height-1-1 uk-overflow-auto">
     <div class="uk-flex uk-flex-column uk-padding" uk-grid>
         <div class="uk-card uk-card-default uk-margin uk-border-rounded">
-            <h2 class="uk-card-title uk-text-center uk-margin-top">GearStorm</h2>
+            <div class="uk-card-header">
+                <h2 class="uk-card-title uk-text-center">GearStorm</h2>
+            </div>
             <div class="uk-card-body">
-                <div class="uk-text-justify">GearStorm is a militarized science fiction sandbox in which players
-                    cooperate
-                    and compete to colonize and fortify their positions on a hostile alien planet. GearStorm takes place
-                    on
-                    an huge, open, procedural, and entirely destructible world. Here players can advance and customize
-                    their
+                <div class="uk-text-justify">
+                    GearStorm is a militarized science fiction sandbox in which players cooperate and compete to
+                    colonize and fortify their positions on a hostile alien planet. GearStorm takes place on an huge,
+                    open, procedural, and entirely destructible world. Here players can advance and customize their
                     technology to improve their chances against each other and the Phage - a deadly nano-virus that is
                     decimating human population.
                 </div>
                 <a href="guide_files/About.html">[Read more...]</a>
-                <ol class="uk-list">
+                <ol class="uk-list uk-text-center">
                     <li><a href="guide_files/Lore.html">The Lore of GearStorm</a></li>
                     <li><a href="guide_files/System_Requirements.html">System Requirements</a></li>
                     <li><a href="guide_files/Release_Date.html">Release Date</a></li>
@@ -32,9 +59,11 @@
         </div>
         <div class="uk-flex uk-flex-row uk-flex-between uk-margin" uk-grid>
             <div class="uk-card uk-card-default uk-border-rounded" style="flex-grow: .4">
-                <h2 class="uk-card-title uk-text-center uk-margin-top">Game Basics</h2>
+                <div class="uk-card-header">
+                    <h2 class="uk-card-title uk-text-center">Game Basics</h2>
+                </div>
                 <div class="uk-card-body">
-                    <ol class="uk-list uk-column-1-2">
+                    <ol class="uk-list uk-column-1-2 uk-text-center">
                         <li><a href="guide_files/Game%20Basics/Basics_Admin.html">Gamemaster</a></li>
                         <li><a href="guide_files/Game%20Basics/Basics_Building.html">Building</a></li>
                         <li><a href="guide_files/Game%20Basics/Basics_Crafting_Items.html">Crafting Items</a></li>
@@ -52,9 +81,11 @@
                 </div>
             </div>
             <div class="uk-card uk-card-default uk-border-rounded" style="flex-grow: .4">
-                <h2 class="uk-card-title uk-text-center uk-margin-top">Guides</h2>
+                <div class="uk-card-header">
+                    <h2 class="uk-card-title uk-text-center">Guides</h2>
+                </div>
                 <div class="uk-card-body">
-                    <ol class="uk-list">
+                    <ol class="uk-list uk-text-center">
                         <li><a href="guide_files/Guides/Guides_How_To_Play.html">How To Play Guide</a></li>
                         <li><a href="guide_files/Guides/Guides_Default_Keys.html">Default Keys</a></li>
                         <li><a href="guide_files/Guides/Guides_Running_Dedicated_Server.html">Running Your Own Dedicated
@@ -64,6 +95,13 @@
                 </div>
             </div>
         </div>
+        <figure class="card-cut">
+            <div class="border"></div>
+            <div class="inner">
+                <div class="background"></div>
+                <div class="content"></div>
+            </div>
+        </figure>
     </div>
 </main>
 </body>
