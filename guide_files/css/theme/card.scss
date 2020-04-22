@@ -1,16 +1,8 @@
-@mixin hook-card-default() {
+@mixin hook-navbar-container() {
   box-shadow : -10px 10px 30px #262626, 10px -10px 30px #404040;
-  color      : #aaa;
 }
 
-@mixin hook-card-default-title() {
-  color : #f76f25;
-}
-
-//@mixin hook-navbar-container() {
-//  box-shadow : -10px 10px 30px #262626, 10px -10px 30px #404040;
-//}
-
+/*
 .card-cut {
   $height : 140px;
   $width  : 102px;
@@ -46,4 +38,4 @@
       width       : 100%;
     }
   }
-}
+}*/

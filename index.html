@@ -5,103 +5,83 @@
     <title>The HTML5 Herald</title>
     <meta content="The HTML5 Herald" name="description">
     <link href="guide_files/css/GearStorm.css" rel="stylesheet">
-    <script src="guide_files/js/uikit.js"></script>
-    <script src="guide_files/js/uikit-core.js"></script>
+    <script src="guide_files/js/jquery.min.js"></script>
+    <script src="guide_files/js/uikit.min.js"></script>
+    <script src="guide_files/js/GearStorm.js"></script>
 </head>
 <body>
 <header>
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <nav class="uk-navbar-container uk-navbar" uk-navbar>
-            <div class="uk-navbar-center">
-                <div class="uk-navbar-center-left">
-                    <div>
-                        <ul class="uk-navbar-nav">
-                            <li><a href="">Game Basics</a></li>
-                            <li><a href="">Guides</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="index.html" class="uk-navbar-item uk-logo">
-                    Logo<!--<img data-src="guide_files/Images/Logo.png" alt="GearStorm Logo" uk-img>-->
-                </a>
-                <div class="uk-navbar-center-right">
-                    <div>
-                        <ul class="uk-navbar-nav">
-                            <li><a href="">Requirements</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
 </header>
-<main class="uk-container uk-height-1-1 uk-overflow-auto">
-    <div class="uk-flex uk-flex-column uk-padding" uk-grid>
-        <div class="uk-card uk-card-default uk-margin uk-border-rounded">
-            <div class="uk-card-header">
-                <h2 class="uk-card-title uk-text-center">GearStorm</h2>
-            </div>
-            <div class="uk-card-body">
-                <div class="uk-text-justify">
-                    GearStorm is a militarized science fiction sandbox in which players cooperate and compete to
-                    colonize and fortify their positions on a hostile alien planet. GearStorm takes place on an huge,
-                    open, procedural, and entirely destructible world. Here players can advance and customize their
-                    technology to improve their chances against each other and the Phage - a deadly nano-virus that is
-                    decimating human population.
+<main class="uk-container uk-height-1-1">
+    <div class="uk-flex uk-flex-column uk-padding-small" uk-grid>
+        <div>
+            <div class="uk-flex uk-flex-row uk-flex-around uk-margin">
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded" style="flex-grow: .4">
+                        <div class="uk-card-header">
+                            <h2 class="uk-card-title uk-text-center">Game Basics</h2>
+                        </div>
+                        <div class="uk-card-body">
+                            <ol class="uk-list uk-column-1-2 uk-text-center">
+                                <li><a href="guide_files/Game%20Basics/Basics_Admin.html">Gamemaster</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Building.html">Building</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Crafting_Items.html">Crafting Items</a>
+                                </li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Creatures.html">Creatures</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Gear.html">Gear</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Items.html">Items</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Missions.html">Missions</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Power Armor.html">Power Armor</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Quests.html">Quests</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Resources.html">Resources</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Vehicles.html">Vehicles</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Weapons.html">Weapons</a></li>
+                                <li><a href="guide_files/Game%20Basics/Basics_Zombies.html">Zombies</a></li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
-                <a href="guide_files/About.html">[Read more...]</a>
-                <ol class="uk-list uk-text-center">
-                    <li><a href="guide_files/Lore.html">The Lore of GearStorm</a></li>
-                    <li><a href="guide_files/System_Requirements.html">System Requirements</a></li>
-                    <li><a href="guide_files/Release_Date.html">Release Date</a></li>
-                </ol>
+                <div>
+                    <div class="uk-card uk-card-default uk-border-rounded" style="flex-grow: .4">
+                        <div class="uk-card-header">
+                            <h2 class="uk-card-title uk-text-center">Guides</h2>
+                        </div>
+                        <div class="uk-card-body">
+                            <ol class="uk-list uk-text-center">
+                                <li><a href="guide_files/Guides/Guides_How_To_Play.html">How To Play Guide</a></li>
+                                <li><a href="guide_files/Guides/Guides_Default_Keys.html">Default Keys</a></li>
+                                <li>
+                                    <a href="guide_files/Guides/Guides_Running_Dedicated_Server.html">Running Your Own Dedicated
+                                        Server</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="uk-flex uk-flex-row uk-flex-between uk-margin" uk-grid>
-            <div class="uk-card uk-card-default uk-border-rounded" style="flex-grow: .4">
+        <div>
+            <div class="uk-card uk-card-default uk-margin uk-border-rounded">
                 <div class="uk-card-header">
-                    <h2 class="uk-card-title uk-text-center">Game Basics</h2>
+                    <h2 class="uk-card-title uk-text-center">About</h2>
                 </div>
                 <div class="uk-card-body">
-                    <ol class="uk-list uk-column-1-2 uk-text-center">
-                        <li><a href="guide_files/Game%20Basics/Basics_Admin.html">Gamemaster</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Building.html">Building</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Crafting_Items.html">Crafting Items</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Creatures.html">Creatures</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Gear.html">Gear</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Items.html">Items</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Missions.html">Missions</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Power Armor.html">Power Armor</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Quests.html">Quests</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Resources.html">Resources</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Vehicles.html">Vehicles</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Weapons.html">Weapons</a></li>
-                        <li><a href="guide_files/Game%20Basics/Basics_Zombies.html">Zombies</a></li>
-                    </ol>
-                </div>
-            </div>
-            <div class="uk-card uk-card-default uk-border-rounded" style="flex-grow: .4">
-                <div class="uk-card-header">
-                    <h2 class="uk-card-title uk-text-center">Guides</h2>
-                </div>
-                <div class="uk-card-body">
+                    <div class="uk-text-justify">
+                        GearStorm is a militarized science fiction sandbox in which players cooperate and compete to
+                        colonize and fortify their positions on a hostile alien planet. GearStorm takes place on an huge,
+                        open, procedural, and entirely destructible world. Here players can advance and customize their
+                        technology to improve their chances against each other and the Phage - a deadly nano-virus that is
+                        decimating human population.
+                    </div>
+                    <a href="guide_files/About.html">[Read more...]</a>
                     <ol class="uk-list uk-text-center">
-                        <li><a href="guide_files/Guides/Guides_How_To_Play.html">How To Play Guide</a></li>
-                        <li><a href="guide_files/Guides/Guides_Default_Keys.html">Default Keys</a></li>
-                        <li><a href="guide_files/Guides/Guides_Running_Dedicated_Server.html">Running Your Own Dedicated
-                            Server</a>
-                        </li>
+                        <li><a href="guide_files/Lore.html">The Lore of GearStorm</a></li>
+                        <li><a href="guide_files/System_Requirements.html">System Requirements</a></li>
+                        <li><a href="guide_files/Release_Date.html">Release Date</a></li>
                     </ol>
                 </div>
             </div>
         </div>
-        <figure class="card-cut">
-            <div class="border"></div>
-            <div class="inner">
-                <div class="background"></div>
-                <div class="content"></div>
-            </div>
-        </figure>
     </div>
 </main>
 </body>
