@@ -1,0 +1,20 @@
+.table-mirror-spaced td {
+  &:first-child {
+    @extend .uk-text-left;
+  }
+
+  &:last-child {
+    @extend .uk-text-right;
+  }
+}
+
+.table-mirror-centered td {
+
+  &:first-child {
+    @extend .uk-text-right;
+  }
+
+  &:last-child {
+    @extend .uk-text-left;
+  }
+}

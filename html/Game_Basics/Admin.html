@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The HTML5 Herald</title>
+    <meta content="The HTML5 Herald" name="description">
+    <base href="../..">
+    <link href="css/GearStorm.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/GearStorm.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main class="uk-container uk-height-1-1">
+        <div class="uk-flex uk-flex-column uk-padding-small uk-margin-top" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-margin uk-border-rounded">
+                    <div class="uk-card-header">
+                        <h2 class="uk-card-title uk-text-center">Gamemaster</h2>
+                    </div>
+                    <div class="uk-card-body">
+                        <div class="uk-text-justify">
+                            The Gamemaster role in GearStorm allows the player to take control of the game in almost
+                            every way. As Gamemaster you can teleport, fly, build unlimited things, spawn anything, ban
+                            people, kick people, teleport people to you, change the damage, range, and rate of fire of
+                            weapons, change the performance, damage, and armor of vehicles, and change the world time,
+                            weather, day cycle, etc.
+                        </div>
+
+                        <h3 class="uk-heading-divider">Becoming Gamemaster</h3>
+                        <div class="uk-text-justify">
+                            Here are the ways to be a Gamemaster in a GearStorm game:
+                            <ol class="uk-list">
+                                <li>
+                                    1. In the game.ini file, under the [/Script/ShooterGame.ServerSettings] section, set the "+ServerAdmin=" value
+                                    to the steam ID number of your admins. Add a new "+ServerAdmin=" value for each Gamemaster you want to add or
+                                    use the "*" value to let anyone be Gamemaster (ie: "+ServerAdmin=*").
+                                </li>
+                                <li>
+                                    2. When hosting the game or starting a campaign, check the "Allow Gamemasters" check
+                                    box and to start in
+                                    Gamemaster mode already, check the "Start in Gamemaster Mode" checkbox.
+                                </li>
+                            </ol>
+
+                        </div>
+                        <!--<img src="media/Admins.png"/>-->
+                        <!--<img src="media/AdminsCheckboxes.png"/>-->
+                        <h3 class="uk-heading-divider">Gamemastering</h3>
+                        <div class="uk-text-justify">
+                            To perform any Gamemaster function in GearStorm, you need to use the Gamemaster interface
+                            accessed by pressing "backspace" (default mapping).
+                        </div>
+                        <!--<img src="media/AdminMenu.png">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
