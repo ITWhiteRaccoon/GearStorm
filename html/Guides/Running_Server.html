@@ -1,10 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <title>GearStorm Manual</title>
     <meta charset="utf-8">
-    <title>The HTML5 Herald</title>
-    <meta content="The HTML5 Herald" name="description">
+    <meta content="GearStorm Manual" name="description">
+    <meta name="apple-mobile-web-app-title" content="GearStorm Manual">
+    <meta name="application-name" content="GearStorm Manual">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <base href="../..">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <link href="css/GearStorm.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/uikit.min.js"></script>
@@ -85,138 +94,154 @@
                             <h3 class="uk-card-title">Running Your Own Dedicated Server</h3>
                         </div>
                         <div class="uk-card-body">
-                            <div class="uk-text-justify">
+                            <p>
                                 Running your own dedicated GearStorm server will give you full control over your
                                 community's GearStorm experience and the best performance for a large number of players.
                                 <br>
-                                Contents
-                            </div>
-                            <div>
-                                <ol class="uk-nav uk-nav-default">
-                                    <li><a href="#">Prerequisites</a></li>
-                                    <li><a href="#">Hardware</a></li>
-                                    <li><a href="#">Network</a></li>
-                                    <li><a href="#">Prerequisites</a></li>
-                                    <li><a href="#">Copying the Server</a></li>
-                                    <li><a href="#">Configuring the Server</a></li>
-                                    <li><a href="#">Running the Server</a></li>
-                                    <li class="uk-parent">
-                                        <a href="#">Port Forwarding and Firewall</a>
-                                        <ol class="uk-nav-sub">
-                                            <li><a href="#">Finding Your Server in Lists</a></li>
-                                            <li><a href="#">Port Forwarding</a></li>
-                                            <li><a href="#">Windows (Firewall and Allow Rules)</a></li>
-                                        </ol>
-                                    </li>
-                                    <li class="uk-parent">
-                                        <a href="#">Automatic Startup</a>
-                                        <ol class="uk-nav-sub">
-                                            <li><a href="#">Windows (via Scheduled Task)</a></li>
-                                        </ol>
-                                    </li>
-                                    <li><a href="#">Updating</a></li>
-                                    <li><a href="#">Administrating Your Server</a></li>
-                                    <li><a href="#">Backing Up Server Data</a></li>
-                                    <li class="uk-parent">
-                                        <a href="#">Troubleshooting</a>
-                                        <ol class="uk-nav-sub">
-                                            <li><a href="#">Server Loses Characters or World Data Upon Restart</a></li>
-                                        </ol>
-                                    </li>
-                                    <li><a href="#">Notes</a></li>
-                                    <li><a href="#">References</a></li>
-                                    <li><a href="#">External Links</a></li>
-                                </ol>
-                            </div>
-                            <h4>Prerequisites</h4>
-                            <div class="uk-text-justify">
-                                Windows Microsoft Visual C++ 2013 Redistributable. DirectX. Your OS must be a 64-bit OS
-                                (The GearStorm server is a 64-bit executable and as such will not run on a 32-bit
-                                install of Windows). The server supports Windows Desktop 7, 8, 10 or newer, and Windows
-                                Server 2012 R2or newer.
-                            </div>
-                            <h4>Hardware</h4>
-                            <div class="uk-text-justify">
-                                The server requires at least 6GB of RAM to start. Memory requirements increase as the
-                                number of connected players increases. On Windows Server 2012 R2, the client uses 3.1GB
-                                of RAM without any clients. Processor: GearStorm dedicated servers can be demanding on
-                                processors power, we recommend investing in the most number of cores you can get and
-                                nothing lower than a Intel i7 or equivalent.
-                            </div>
-                            <h4>Network</h4>
-                            <div class="uk-text-justify">
-                                GearStorm can be demanding on the network also, for a dedicated server with more than 5
-                                players online full time, we recommend at least 1 Gigabit of upload and download speed,
-                                more may be required depending on how many players you have on at the same time. The
-                                server listens for incoming connections on the ports listed below. Ensure your network
-                                configuration allows incoming connections to these ports and directs them to the host
-                                that will be running your dedicated server. Port Purpose UDP 27015 Query port for
-                                Steam's server browser UDP 7777 Game client port UDP 7778 Raw UDP socket port (always
-                                Game client port +1) TCP 27020 RCON for remote console server access (optional) You can
-                                host multiple dedicated servers on the same host, however be aware that CPU and memory
-                                should be monitored carefully if they are busy servers rather than test servers.
+                                The dedicated server is available for Windows only for now.
+                            </p>
 
-                                For example: Server instance Game port Raw UDP port Query port RCON port Server game
-                                instance 1 7777 7778 27015 27020 Server game instance 2 7779 7780 27016 27021 Server
-                                game instance 3 7781 7782 27017 27022 Server game instance 4 (completely different
-                                ports) 9999 10000 37015 37016
-                                <br>
-                                <strong>*Notes*</strong> Query Port cannot be between 27020 and 27050 due to Steam using
-                                those ports. Don't forget about the windows firewall! Just allow the
-                                "gearstormserver.exe" through it.
-                            </div>
-                            <h4>Copying the Server</h4>
-                            <div class="uk-text-justify">
-                                The dedicated server is available for Windows only for now. The server is included in
-                                your Steam distribution of the game. Simply copy YOUR_STEAM_GEARSTORM_FOLDER to your
-                                server.
-                            </div>
-                            <h4>Configuring the Server</h4>
-                            <div class="uk-text-justify">
-                                The configuration parameters you need to set <b>OUTSIDE</b> of the game are in
-                                <code>"C:\Program&nbsp;Files(x86)\<wbr/>Steam\<wbr/>steamapps\<wbr/>common\<wbr/>GearStorm\<wbr/>GearStorm\<wbr/>Config\<wbr/>defaultgame.ini"</code>
-                                .
-                                <br>
-                                You may want to copy the section below
-                                <pre><code>[/Script/ShooterGame.ServerSettings]
-<!--                                -->ServerName="Iron City Corporate Wasteland"
-<!--                                -->ServerDescription="Mesos Map, All Weapons, All Vehicles, AI on Hardest, Everyone is Admin"
-<!--                                -->+ServerAdmin=*</code></pre>
-                                to
-                                <code>"C:\Program&nbsp;Files(x86)\<wbr/>Steam\<wbr/>steamapps\<wbr/>common\<wbr/>GearStorm\<wbr/>GearStorm\<wbr/>Saved\<wbr/>Config\<wbr/>WindowsNoEditor\<wbr/>game.inigame.ini"</code>
-                                .
-                                <br>
-                                Edit the "ServerName" to display your server name in the Steam server browser and in the
-                                GearStorm in-game server browser.
-                                <br>
-                                Edit the "ServerDescription" field to display your description in the Steam server
-                                browser and in the GearStorm in-game server browser.
-                                <br>
-                                In the example above, the entry "+ServerAdmin=*" means everyone that logs into the
-                                server is admin! You can delete this line and add admins via a Steam player's 17-digit
-                                Steam ID number. A Steam ID number can be seen by going to the "view my profile" option
-                                on the upper-right hand side of the page and looking at the URL field. The Steam ID
-                                number is the number after "https://steamcommunity.com/profiles/". Simply add new lines
-                                for each player you want to be admin like the example below:
-                                +ServerAdmin=12345678912345678 +ServerAdmin=06061118111011701
-                                +ServerAdmin=00000000000000000 +ServerAdmin=10101001000011100
-                                <br>
-                                ***If you don't remove the "+ServerAdmin=*" entry, everyone that logs into your server
-                                will be admin no matter what other listing you put in!***
-                            </div>
-                            <h4>Running the Server</h4>
-                            <div class="uk-text-justify">
-                                Create start_GearStorm_server.bat: and place it in
-                                YOUR_STEAM_GEARSTORM_FOLDER/GearStorm/GearStorm/Binaries/Win64/ (remove the '<' '>'
-                                symbols!) start ShooterGameServer.exe /game/maps/Campaign?Port=
-                            </div>
-                            <h4>Port Forwarding and Firewall</h4>
-                            <div class="uk-text-justify">
-                                For your server to become visible in both the GearStorm in-game server browser and the
-                                Steam server browser, do the following:
-                            </div>
-                            <h4>Windows (Firewall and Allow Rules)</h4>
+                            <h4>Contents</h4>
+                            <ol class="uk-nav uk-nav-default">
+                                <li><a href="#">Prerequisites</a></li>
+                                <li><a href="#">Hardware</a></li>
+                                <li><a href="#">Network</a></li>
+                                <li><a href="#">Prerequisites</a></li>
+                                <li><a href="#">Copying the Server</a></li>
+                                <li><a href="#">Configuring the Server</a></li>
+                                <li><a href="#">Running the Server</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Port Forwarding and Firewall</a>
+                                    <ol class="uk-nav-sub">
+                                        <li><a href="#">Finding Your Server in Lists</a></li>
+                                        <li><a href="#">Port Forwarding</a></li>
+                                        <li><a href="#">Windows (Firewall and Allow Rules)</a></li>
+                                    </ol>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">Automatic Startup</a>
+                                    <ol class="uk-nav-sub">
+                                        <li><a href="#">Windows (via Scheduled Task)</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#">Updating</a></li>
+                                <li><a href="#">Administrating Your Server</a></li>
+                                <li><a href="#">Backing Up Server Data</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Troubleshooting</a>
+                                    <ol class="uk-nav-sub">
+                                        <li><a href="#">Server Loses Characters or World Data Upon Restart</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#">Notes</a></li>
+                                <li><a href="#">References</a></li>
+                                <li><a href="#">External Links</a></li>
+                            </ol>
+
+                            <h4 class="uk-heading-divider">Requirements</h4>
+                            <ol class="uk-list uk-list-hyphen">
+                                <li>CPU: Intel Core i7</li>
+                                <li>RAM: 6GB</li>
+                                <li>OS: Windows 7 64 bit or newer / Windows Server 2012 R2 or newer (64 bits)</li>
+                                <li>Microsoft Visual C++ 2013 Redistributable</li>
+                                <li>DirectX</li>
+                            </ol>
+
+                            <h4>Network</h4>
                             <div>
+                                <p>
+                                    GearStorm can be demanding on the network also, for a dedicated server with more
+                                    than 5 players online full time, we recommend at least 1 Gigabit of upload and
+                                    download speed, more may be required depending on how many players you have on at
+                                    the same time. The server listens for incoming connections on the ports listed
+                                    below. Ensure your network configuration allows incoming connections to these ports
+                                    and directs them to the host that will be running your dedicated server.
+                                </p>
+                                <table class="uk-table uk-table-divider uk-table-middle uk-table-small">
+                                    <tbody>
+                                    <tr>
+                                        <td>UDP 7777</td>
+                                        <td>Game client port</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UDP 7778</td>
+                                        <td>Raw UDP socket port (always Game client port +1)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UDP 27015</td>
+                                        <td>Query port for Steam's server browser</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TCP 27020</td>
+                                        <td>RCON for remote console server access (optional)</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    You can host multiple dedicated servers on the same host, however be aware that CPU
+                                    and memory should be monitored carefully if they are busy servers rather than test
+                                    servers. For example:
+                                </p>
+                                <table class="uk-table uk-table-divider uk-table-middle uk-table-small">
+                                    <thead>
+                                    <tr>
+                                        <th>Server instance</th>
+                                        <th>Game port</th>
+                                        <th>Raw UDP port</th>
+                                        <th>Query port</th>
+                                        <th>RCON port</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Server game instance 1</td>
+                                        <td>7777</td>
+                                        <td>7778</td>
+                                        <td>27015</td>
+                                        <td>27020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Server game instance 2</td>
+                                        <td>7779</td>
+                                        <td>7780</td>
+                                        <td>27016</td>
+                                        <td>27021</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Server game instance X</td>
+                                        <td>XXXX</td>
+                                        <td>XXXX</td>
+                                        <td>XXXXX</td>
+                                        <td>XXXXX</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    *Query Port cannot be between 27020 and 27050 due to Steam using those ports. Don't
+                                    forget about the windows firewall! Just allow the "gearstormserver.exe" through it.
+                                </p>
+
+                                <p>
+                                    For your server to become visible in both the GearStorm in-game server browser and
+                                    the Steam server browser, do the following:
+                                </p>
+
+                                <h5>Port Forwarding</h5>
+                                <p>
+                                    portforward.com offers tutorials for setting up port forwarding on your router. For
+                                    the default setup, forwarding 27015 as the port, and 27016 as the query port. 27015,
+                                    27016, and 7777 are the most common ports that work.
+                                    <br>
+                                    You MUST forward both TCP and UDP for your server to show up on any lists. You can
+                                    make sure your ports are open by using the tool from portforward.com, that is, after
+                                    you
+                                    <br>
+                                    Enter the ports that you have forwarded in the start_server.bat file you should have
+                                    created earlier. For example: start ShooterGameServer.exe
+                                    TheIsland?listen?SessionName=
+                                </p>
+
+                                <h5>Windows (Firewall and Allow Rules)</h5>
                                 <ol class="uk-list">
                                     <li>If you're on Windows 10, click on the search box in the lower left corner and
                                         type in "Firewall". Click on "Windows Firewall".
@@ -252,89 +277,122 @@
                                     </li>
                                 </ol>
                             </div>
-                            <h4>Port Forwarding</h4>
-                            <div class="uk-text-justify">
-                                portforward.com offers tutorials for setting up port forwarding on your router. For the
-                                default setup, forwarding 27015 as the port, and 27016 as the query port. 27015, 27016,
-                                and 7777 are the most common ports that work.
 
-                                You MUST forward both TCP and UDP for your server to show up on any lists. You can make
-                                sure your ports are open by using the tool from portforward.com, that is, after you
+                            <h4>Configuring the Server</h4>
+                            The configuration parameters you need to set <b>OUTSIDE</b> of the game are in <code>YOUR_STEAM_FOLDER\<wbr/>GearStorm\<wbr/>GearStorm\<wbr/>Config\<wbr/>defaultgame.ini</code>.
+                            <br>
+                            You may want to copy the section below
+                            <pre><code>[/Script/ShooterGame.ServerSettings]
+ServerName="CUSTOM_SERVER_NAME"
+ServerDescription="CUSTOM_SERVER_DESCRIPTION"
++ServerAdmin=*</code></pre>
+                            to <code>YOUR_STEAM_FOLDER\<wbr/>GearStorm\<wbr/>GearStorm\<wbr/>Saved\<wbr/>Config\<wbr/>WindowsNoEditor\<wbr/>game.inigame.ini</code>.
+                            <br>
+                            Edit "ServerName" and "ServerDescription" to display your server name and description in the
+                            Steam server browser and in the GearStorm in-game server browser.
+                            <br>
+                            In the example above, the entry "+ServerAdmin=*" means everyone that logs into the server is
+                            admin! You can delete this line and add admins using Steam player's 17-digit Steam ID
+                            number. A Steam ID number can be seen by going to the "view my profile" option on the
+                            upper-right hand side of the page and looking at the URL field. The Steam ID number is the
+                            number after <code>https://steamcommunity.com/<wbr/>profiles/</code>. Simply add new lines
+                            for each player you want to be admin like the example below:
+                            <pre><code>+ServerAdmin=12345678912345678
++ServerAdmin=06061118111011701
++ServerAdmin=00000000000000000</code></pre>
+                            ***If you don't remove the "+ServerAdmin=*" entry, everyone that logs into your server will
+                            be admin no matter what other listing you put in!***
 
-                                Enter the ports that you have forwarded in the start_server.bat file you should have
-                                created earlier. For example: start ShooterGameServer.exe TheIsland?listen?SessionName=
-                            </div>
-                            <h4>Finding Your Server in Lists</h4>
-                            You can access your server via the Steam server browser or the GearStorm Browser. Just
-                            search for you name in the GearStorm server browser, or find your IP address in the Steam
-                            server browser.
+                            <h4>Running the Server</h4>
+                            Create <code>start_GearStorm_server.bat</code> and place it in
+                            <code>YOUR_STEAM_FOLDER/<wbr/>GearStorm/<wbr/>GearStorm/<wbr/>Binaries/<wbr/>Win64/</code>
+                            (remove the '<' '>' symbols!) start ShooterGameServer.exe /game/maps/Campaign?Port=
+
                             <h4>Automatic Startup</h4>
-                            Windows (via Scheduled Task) You can configure a scheduled task to automatically run a batch
-                            file and start the dedicated server when the system boots.
-                            <ol class="uk-list">
-                                <li>Open 'Task Scheduler'
-                                </li>
-                                <li>Create Basic Task</li>
-                                <li>The 'Create Basic Task Wizard' will appear, name the task whatever you want
-                                </li>
-                                <li>Set the Trigger to 'When the computer starts'</li>
-                                <li>Set the Action to 'Start a program'.</li>
-                                <li>You will need to browse to the program/script you wish to start (which is your .BAT
-                                    batch file that starts your server).
-                                </li>
-                                <li>Depending on how your batch file works, you may need to set the "Start in
-                                    (optional)" path, so the working directory of your batch file is correct. (If your
-                                    batch file simply contains the "start ShooterGame ..." command, then you should set
-                                    the "Start in (optional)" path of your scheduled task to the directory that contains
-                                    the batch file)
-                                </li>
-                                <li>Before you create the scheduled task, click the checkbox to "open properties window"
-                                    after it's created
-                                </li>
-                                <li>In the General Tab under the Security Options frame, you probably want to choose
-                                    "Run whether user is logged on or not"
-                                </li>
-                                <li>I personally checked "run with highest privileges" just in case. This might not be
-                                    necessary.
-                                </li>
-                            </ol>
-                            After following these steps, your server should be up and running, and be automatically
-                            managed by the host on startup and shutdown.
+                            <div>
+                                Windows (via Scheduled Task) You can configure a scheduled task to automatically run a
+                                batch file and start the dedicated server when the system boots.
+                                <ol class="uk-list">
+                                    <li>Open 'Task Scheduler'
+                                    </li>
+                                    <li>Create Basic Task</li>
+                                    <li>The 'Create Basic Task Wizard' will appear, name the task whatever you want
+                                    </li>
+                                    <li>Set the Trigger to 'When the computer starts'</li>
+                                    <li>Set the Action to 'Start a program'.</li>
+                                    <li>You will need to browse to the program/script you wish to start (which is your
+                                        .BAT batch file that starts your server).
+                                    </li>
+                                    <li>Depending on how your batch file works, you may need to set the "Start in
+                                        (optional)" path, so the working directory of your batch file is correct. (If
+                                        your batch file simply contains the "start ShooterGame ..." command, then you
+                                        should set the "Start in (optional)" path of your scheduled task to the
+                                        directory that contains the batch file)
+                                    </li>
+                                    <li>Before you create the scheduled task, click the checkbox to "open properties
+                                        window" after it's created
+                                    </li>
+                                    <li>In the General Tab under the Security Options frame, you probably want to choose
+                                        "Run whether user is logged on or not"
+                                    </li>
+                                    <li>I personally checked "run with highest privileges" just in case. This might not
+                                        be necessary.
+                                    </li>
+                                </ol>
+                                After following these steps, your server should be up and running, and be automatically
+                                managed by the host on startup and shutdown.
 
-                            Updating To update the server when a new version is released, just re-copy your game from
-                            you Steam directory to your server. Be sure to preserve the same files in your server's
-                            "\Saved\SaveGames" directory before you copy the game over and re-copy them over the files
-                            in the game directory.
+                                Updating To update the server when a new version is released, just re-copy your game
+                                from you Steam directory to your server. Be sure to preserve the same files in your
+                                server's "\Saved\SaveGames" directory before you copy the game over and re-copy them
+                                over the files in the game directory.
+                            </div>
+
                             <h4>Administrating Your Server</h4>
-                            GearStorm has in-game GUI interfaces for most admin functions. By default, the "backspace"
-                            key will bring up the admin menu and allow a admin to teleport himself or other players,
-                            spawn anything, build fast and unlimited, fly, kick players, kill players, ban players,
-                            change weapon damages, range, dropoffs for the whole server instantly, edit and create new
-                            quests, change the weather instantly, change the time of day, alter the shadow lighting for
-                            every player on the server instantly, send special notices to all the players, and save and
-                            load the server map. All while playing the game, inside the game interface. Some built items
-                            have special admin functions (for example, building cores) that you can access with "alt-e"
-                            instead of "e" (default key setting). As a admin, you can use these menus to set the
-                            destructibility of blocks within a core's radius or the difficulty level of the AI in that
-                            core's radius, for example.
-                            <h4>Backing Up Server Data</h4>
-                            To make a backup of the server data, simply copy the folder named ShooterGame/Saved (and his
-                            content) to the desired backup location. This folder contains all item, social, player and
-                            world data for the server. Performing a backup is recommended before updating a server to a
-                            new release.
-                            <h4>Troubleshooting</h4>
-                            <h4>Server Loses Characters or World Data Upon Restart</h4>
-                            If your server isn't retaining characters or world data when it's restarted, it may not have
-                            full access to the folder where it's installed. The first time the server is run, it should
-                            create a folder named GearStorm/Saved containing various configuration and save files. If
-                            the server has run at least once but hasn't created this folder, it may not have been able
-                            to create new folders and files there. Verify that the folder where the server is installed
-                            is readable and writable by the user account that actually runs the server. (For Windows
-                            servers, check the status of User Account Control)
+                            <p>
+                                GearStorm has in-game GUI interfaces for most admin functions. By default, the
+                                "backspace" key will bring up the admin menu and allow a admin to teleport himself or
+                                other players, spawn anything, build fast and unlimited, fly, kick players, kill
+                                players, ban players, change weapon damages, range, dropoffs for the whole server
+                                instantly, edit and create new quests, change the weather instantly, change the time of
+                                day, alter the shadow lighting for every player on the server instantly, send special
+                                notices to all the players, and save and load the server map. All while playing the
+                                game, inside the game interface. Some built items have special admin functions (for
+                                example, building cores) that you can access with "alt-e" instead of "e" (default key
+                                setting). As a admin, you can use these menus to set the destructibility of blocks
+                                within a core's radius or the difficulty level of the AI in that core's radius, for
+                                example.
+                            </p>
 
-                            The server software, by default, is set-up to automatically save world data every 15
-                            minutes. If your server crashes before the first 15 minutes are up, you will not have any
-                            data saved.
+                            <h4>Copying the Server</h4>
+                            <p>
+                                The server is included in your Steam distribution of the game. Simply copy
+                                YOUR_STEAM_GEARSTORM_FOLDER to your server.
+                            </p>
+
+                            <h4>Backing Up Server Data</h4>
+                            <p>
+                                To make a backup of the server data, simply copy the folder named ShooterGame/Saved (and
+                                his content) to the desired backup location. This folder contains all item, social,
+                                player and world data for the server. Performing a backup is recommended before updating
+                                a server to a new release.
+                            </p>
+
+                            <h4>Troubleshooting</h4>
+                            <h5>Server Loses Characters or World Data Upon Restart</h5>
+                            <p>
+                                If your server isn't retaining characters or world data when it's restarted, it may not
+                                have full access to the folder where it's installed. The first time the server is run,
+                                it should create a folder named GearStorm/Saved containing various configuration and
+                                save files. If the server has run at least once but hasn't created this folder, it may
+                                not have been able to create new folders and files there. Verify that the folder where
+                                the server is installed is readable and writable by the user account that actually runs
+                                the server. (For Windows servers, check the status of User Account Control)
+
+                                The server software, by default, is set-up to automatically save world data every 15
+                                minutes. If your server crashes before the first 15 minutes are up, you will not have
+                                any data saved.
+                            </p>
                         </div>
                     </div>
                 </div>
