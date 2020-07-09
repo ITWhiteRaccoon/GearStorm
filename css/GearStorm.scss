@@ -3,7 +3,9 @@
 @import '../../uikit/src/scss/variables-theme';
 @import '../../uikit/src/scss/mixins-theme';
 
+@import 'theme/all';
 @import 'theme/card';
+@import 'theme/nav';
 @import 'theme/table';
 
 @import '../../uikit/src/scss/uikit-theme';

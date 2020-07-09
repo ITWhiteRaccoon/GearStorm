@@ -1,0 +1,29 @@
+@font-face {
+  font-family : Primus;
+  src         : url('../css/font/Primus-Regular.otf');
+}
+
+@mixin hook-base-code() {
+  background    : $global-muted-background;
+  border-radius : $border-rounded-border-radius;
+  padding       : 0 5px;
+  white-space   : normal;
+}
+
+body {
+  background-attachment : fixed;
+  overflow              : hidden;
+}
+
+.fade {
+  transition : opacity .2s ease-in-out;
+}
+
+main {
+  height     : calc(-80px + 100vh);
+  overflow-y : auto;
+}
+
+.no-opacity {
+  opacity : 0;
+}

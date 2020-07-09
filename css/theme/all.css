@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Primus;
+  src: url("../css/font/Primus-Regular.otf");
+}
+.fade {
+  transition: opacity 0.2s ease-in-out;
+}
+
+main {
+  height: calc(-80px + 100vh);
+}
+
+.no-opacity {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=all.css.map */

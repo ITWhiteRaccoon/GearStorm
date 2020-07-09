@@ -10,193 +10,260 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/GearStorm.js"></script>
 </head>
-<body>
+<body uk-height-viewport class="uk-background-cover" data-src="media/Backgrounds/full width.webp" uk-img>
     <header>
-    </header>
-    <main class="uk-container uk-height-1-1">
-        <div class="uk-flex uk-flex-column uk-padding-small uk-margin-top" uk-grid>
-            <div>
-                <div class="uk-card uk-card-default uk-border-rounded uk-margin-top">
-                    <div class="uk-card-header">
-                        <h3 class="uk-card-title">Default Keys</h3>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-navbar-container" uk-navbar="delay-show:200;delay-hide:400">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item"
+                       href="javascript:window.open('https://store.steampowered.com/app/393800/GearStorm/')">
+                        <img src="media/Steam-Logo-Black.svg" uk-svg width="35">
+                    </a>
+                </div>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-center-left">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Game Basics</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="html/Game_Basics/Admin.html">Gamemaster</a></li>
+                                            <li><a href="html/Game_Basics/Building.html">Building</a></li>
+                                            <li><a href="html/Game_Basics/Crafting_Items.html">Crafting Items</a></li>
+                                            <li><a href="html/Game_Basics/Creatures.html">Creatures</a></li>
+                                            <li><a href="html/Game_Basics/Gear.html">Gear</a></li>
+                                            <li><a href="html/Game_Basics/Items.html">Items</a></li>
+                                            <li><a href="html/Game_Basics/Missions.html">Missions</a></li>
+                                            <li><a href="html/Game_Basics/Power_Armor.html">Power Armor</a></li>
+                                            <li><a href="html/Game_Basics/Quests.html">Quests</a></li>
+                                            <li><a href="html/Game_Basics/Resources.html">Resources</a></li>
+                                            <li><a href="html/Game_Basics/Vehicles.html">Vehicles</a></li>
+                                            <li><a href="html/Game_Basics/Weapons.html">Weapons</a></li>
+                                            <li><a href="html/Game_Basics/Zombies.html">Zombies</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Guides</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="html/Guides/How_To_Play.html">How To Play</a></li>
+                                            <li><a href="html/Guides/Default_Keys.html">Default Keys</a></li>
+                                            <li><a href="html/Guides/Running_Server.html">Run Your Own Server</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="uk-card-body">
-                        Here is a list of all the current key configs and actions you can take, you can change these keys from default
-                        to whatever you want in the main menu:
-                        <table class="uk-table uk-table-divider uk-table-middle uk-table-small table-mirror-centered">
-                            <thead>
-                            <tr>
-                                <th class="uk-text-center">Key</th>
-                                <th class="uk-text-center">Action</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/Esc.png" uk-img></td>
-                                <td>In Game Menu</td>
-                            </tr>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/Tab.png" uk-img></td>
-                                <td>Scoreboard</td>
-                            </tr>
-                            <tr>
-                                <td>Left Mouse Button</td>
-                                <td>Fire</td>
-                            </tr>
-                            <tr>
-                                <td>Right Mouse Button</td>
-                                <td>Targeting</td>
-                            </tr>
-                            <tr>
-                                <td>Mouse Scroll Up</td>
-                                <td>Next Weapon</td>
-                            </tr>
-                            <tr>
-                                <td>Mouse Scroll Down</td>
-                                <td>Previous Weapon</td>
-                            </tr>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/R.png" uk-img></td>
-                                <td>Reload</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img data-height="40" data-src="media/Keys/Shift.png" uk-img>
-                                    or
-                                    <img data-height="40" data-src="media/Keys/Forward_Slash.png" uk-img>
-                                </td>
-                                <td>Run</td>
-                            </tr>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/Space.png" uk-img></td>
-                                <td>Jump</td>
-                            </tr>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/C.png" uk-img></td>
-                                <td>Toggle Chat</td>
-                            </tr>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/E.png" uk-img> / Middle Mouse Button</td>
-                                <td>Use</td>
-                            </tr>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/F.png" uk-img></td>
-                                <td>Context Menu</td>
-                            </tr>
-                            <tr>
-                                <td><img data-height="40" data-src="media/Keys/Page_Down.png" uk-img></td>
-                                <td>Toggle Inventory</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img data-height="40" data-src="media/Keys/Z.png" uk-img>
-                                    or
-                                    <img data-height="40" data-src="media/Keys/1.png" uk-img>
-                                </td>
-                                <td>Build Gun Roll</td>
-                            </tr>
-                            <tr>
-                                <td>X / Num Pad 7</td>
-                                <td>Build Gun Pitch</td>
-                            </tr>
-                            <tr>
-                                <td>Y / Num Pad 7</td>
-                                <td>Build Gun Yaw</td>
-                            </tr>
-                            <tr>
-                                <td>Right Ctrl</td>
-                                <td>Crouch</td>
-                            </tr>
-                            <tr>
-                                <td>F7</td>
-                                <td>SaveMenu</td>
-                            </tr>
-                            <tr>
-                                <td>Add</td>
-                                <td>HandBrake</td>
-                            </tr>
-                            <tr>
-                                <td>I/Page Down</td>
-                                <td>ToggleInventory</td>
-                            </tr>
-                            <tr>
-                                <td>G/Num Pad 5</td>
-                                <td>Toggle Gun Configuration</td>
-                            </tr>
-                            <tr>
-                                <td>T</td>
-                                <td>Push To Talk</td>
-                            </tr>
-                            <tr>
-                                <td>C</td>
-                                <td>Chat</td>
-                            </tr>
-                            <tr>
-                                <td>Home</td>
-                                <td>Toggle 3rd Person</td>
-                            </tr>
-                            <tr>
-                                <td>Insert</td>
-                                <td>MouseLook</td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>LightToggle</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>Vehicle Grab</td>
-                            </tr>
-                            <tr>
-                                <td>H</td>
-                                <td>Vehicle Deploy</td>
-                            </tr>
-                            <tr>
-                                <td>Backspace</td>
-                                <td>Toggle Cheat Menu</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>Toggle Map</td>
-                            </tr>
-                            <tr>
-                                <td>R</td>
-                                <td>Reload</td>
-                            </tr>
-                            <tr>
-                                <td>LeftControl</td>
-                                <td>Crouch/Prone</td>
-                            </tr>
-                            <tr>
-                                <td>V</td>
-                                <td>Toggle HUD</td>
-                            </tr>
-                            <tr>
-                                <td>LeftControl</td>
-                                <td>Auto Roll Stabilization</td>
-                            </tr>
-                            <tr>
-                                <td>BackSpace</td>
-                                <td>ToggleAdminMenu</td>
-                            </tr>
-                            <tr>
-                                <td>Z</td>
-                                <td>GunRoll</td>
-                            </tr>
-                            <tr>
-                                <td>X</td>
-                                <td>GunPitch</td>
-                            </tr>
-                            <tr>
-                                <td>LeftControl</td>
-                                <td>ThirdPersonToggle</td>
-                            </tr>
-                            <tr>
-                                <td>Alt-Enter/F-11</td>
-                                <td>Toggles Fullscreen</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <a class="uk-navbar-item uk-logo" href="index.html">
+                        <img alt="GearStorm Logo" src="media/Logo.png" uk-img width="200">
+                    </a>
+                    <div class="uk-navbar-center-right">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li><a href="html/System_Requirements.html">System Requirements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-item" href="javascript:window.open('https://discord.gg/687WMkQ')">
+                        <img src="media/Discord-Logo-Black.svg" uk-svg width="50">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main uk-height-viewport="offset-top:true" class="uk-background-cover">
+        <div class="uk-container">
+            <div class="uk-margin-top uk-margin-bottom uk-flex uk-flex-column uk-padding-small fade no-opacity" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-header">
+                            <h3 class="uk-card-title">Default Keys</h3>
+                        </div>
+                        <div class="uk-card-body">
+                            Here is a list of all the current key configs and actions you can take, you can change these
+                            keys from default to whatever you want in the main menu:
+                            <table class="uk-table uk-table-divider uk-table-middle uk-table-small table-mirror-centered">
+                                <thead>
+                                <tr>
+                                    <th class="uk-text-center">Key</th>
+                                    <th class="uk-text-center">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Esc.png" uk-img></td>
+                                    <td>In Game Menu</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Tab.png" uk-img></td>
+                                    <td>Scoreboard</td>
+                                </tr>
+                                <tr>
+                                    <td>Left Mouse Button</td>
+                                    <td>Fire</td>
+                                </tr>
+                                <tr>
+                                    <td>Right Mouse Button</td>
+                                    <td>Targeting</td>
+                                </tr>
+                                <tr>
+                                    <td>Mouse Scroll Up</td>
+                                    <td>Next Weapon</td>
+                                </tr>
+                                <tr>
+                                    <td>Mouse Scroll Down</td>
+                                    <td>Previous Weapon</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/R.png" uk-img></td>
+                                    <td>Reload</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img data-height="40" data-src="media/Keys/Shift.png" uk-img> or <img
+                                            data-height="40" data-src="media/Keys/Forward_Slash.png" uk-img>
+                                    </td>
+                                    <td>Run</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Space.png" uk-img></td>
+                                    <td>Jump</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/C.png" uk-img></td>
+                                    <td>Toggle Chat</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/E.png" uk-img> / Middle Mouse Button
+                                    </td>
+                                    <td>Use</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/F.png" uk-img></td>
+                                    <td>Context Menu</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Page_Down.png" uk-img></td>
+                                    <td>Toggle Inventory</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img data-height="40" data-src="media/Keys/Z.png" uk-img> or <img
+                                            data-height="40"
+                                            data-src="media/Keys/1.png"
+                                            uk-img>
+                                    </td>
+                                    <td>Build Gun Roll</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/X.png" uk-img> / Num Pad 7</td>
+                                    <td>Build Gun Pitch</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Y.png" uk-img> / Num Pad 7</td>
+                                    <td>Build Gun Yaw</td>
+                                </tr>
+                                <tr>
+                                    <td>Right Ctrl</td>
+                                    <td>Crouch</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/F7.png" uk-img></td>
+                                    <td>SaveMenu</td>
+                                </tr>
+                                <tr>
+                                    <td>Add</td>
+                                    <td>HandBrake</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/I.png" uk-img> or <img
+                                            data-height="40" data-src="media/Keys/Page_Down.png" uk-img></td>
+                                    <td>ToggleInventory</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/G.png" uk-img>/Num Pad 5</td>
+                                    <td>Toggle Gun Configuration</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/T.png" uk-img></td>
+                                    <td>Push To Talk</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/C.png" uk-img></td>
+                                    <td>Chat</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Home.png" uk-img></td>
+                                    <td>Toggle 3rd Person</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Insert.png" uk-img></td>
+                                    <td>MouseLook</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/L.png" uk-img></td>
+                                    <td>LightToggle</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/G.png" uk-img></td>
+                                    <td>Vehicle Grab</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/H.png" uk-img></td>
+                                    <td>Vehicle Deploy</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Backspace.png" uk-img></td>
+                                    <td>Toggle Cheat Menu</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/M.png" uk-img></td>
+                                    <td>Toggle Map</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/R.png" uk-img></td>
+                                    <td>Reload</td>
+                                </tr>
+                                <tr>
+                                    <td>LeftControl</td>
+                                    <td>Crouch/Prone</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/V.png" uk-img></td>
+                                    <td>Toggle HUD</td>
+                                </tr>
+                                <tr>
+                                    <td>LeftControl</td>
+                                    <td>Auto Roll Stabilization</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Backspace.png" uk-img></td>
+                                    <td>ToggleAdminMenu</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/Z.png" uk-img></td>
+                                    <td>GunRoll</td>
+                                </tr>
+                                <tr>
+                                    <td><img data-height="40" data-src="media/Keys/X.png" uk-img></td>
+                                    <td>GunPitch</td>
+                                </tr>
+                                <tr>
+                                    <td>LeftControl</td>
+                                    <td>ThirdPersonToggle</td>
+                                </tr>
+                                <tr>
+                                    <td>Alt-Enter/ <img data-height="40" data-src="media/Keys/F11.png" uk-img></td>
+                                    <td>Toggles Fullscreen</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

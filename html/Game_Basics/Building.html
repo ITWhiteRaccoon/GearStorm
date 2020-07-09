@@ -10,13 +10,94 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/GearStorm.js"></script>
 </head>
-<body>
+<body uk-height-viewport class="uk-background-cover" data-src="media/Backgrounds/full width.webp" uk-img>
     <header>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-navbar-container" uk-navbar="delay-show:200;delay-hide:400">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item"
+                       href="javascript:window.open('https://store.steampowered.com/app/393800/GearStorm/')">
+                        <img src="media/Steam-Logo-Black.svg" uk-svg width="35">
+                    </a>
+                </div>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-center-left">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="#">Game Basics</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="html/Game_Basics/Admin.html">Gamemaster</a></li>
+                                            <li><a href="html/Game_Basics/Building.html">Building</a></li>
+                                            <li><a href="html/Game_Basics/Crafting_Items.html">Crafting Items</a></li>
+                                            <li><a href="html/Game_Basics/Creatures.html">Creatures</a></li>
+                                            <li><a href="html/Game_Basics/Gear.html">Gear</a></li>
+                                            <li><a href="html/Game_Basics/Items.html">Items</a></li>
+                                            <li><a href="html/Game_Basics/Missions.html">Missions</a></li>
+                                            <li><a href="html/Game_Basics/Power_Armor.html">Power Armor</a></li>
+                                            <li><a href="html/Game_Basics/Quests.html">Quests</a></li>
+                                            <li><a href="html/Game_Basics/Resources.html">Resources</a></li>
+                                            <li><a href="html/Game_Basics/Vehicles.html">Vehicles</a></li>
+                                            <li><a href="html/Game_Basics/Weapons.html">Weapons</a></li>
+                                            <li><a href="html/Game_Basics/Zombies.html">Zombies</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Guides</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="html/Guides/How_To_Play.html">How To Play</a></li>
+                                            <li><a href="html/Guides/Default_Keys.html">Default Keys</a></li>
+                                            <li><a href="html/Guides/Running_Server.html">Run Your Own Server</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="uk-navbar-item uk-logo" href="index.html">
+                        <img alt="GearStorm Logo" src="media/Logo.png" uk-img width="200">
+                    </a>
+                    <div class="uk-navbar-center-right">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li><a href="html/System_Requirements.html">System Requirements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-item" href="javascript:window.open('https://discord.gg/687WMkQ')">
+                        <img src="media/Discord-Logo-Black.svg" uk-svg width="50">
+                    </a>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main class="uk-container uk-height-1-1">
-        Building is one of the core features of GearStorm. There are a wide variety of things you can build with from
-        the building materials, including: battlements, bridges, doors, garages, lights, walls, and more.</div>You can build
-        a humble base or a massive city ino GearStorm:
-        <img src="../../media/City.jpg"></div></main>
+    <main uk-height-viewport="offset-top:true" class="uk-overflow-auto">
+        <div class="uk-margin-top uk-margin-bottom uk-flex uk-flex-column uk-padding-small fade no-opacity" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default  ">
+                    <div class="uk-card-header">
+                        <h3 class="uk-card-title uk-text-center">Building</h3>
+                    </div>
+                    <div class="uk-card-body">
+                        <div class="uk-text-justify">
+                            Building is one of the core features of GearStorm. There are a wide variety of things you
+                            can build with from the building materials, including: battlements, bridges, doors, garages,
+                            lights, walls, and more.
+                            <br>
+                            You can build a humble base or a massive city ino GearStorm:
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <img class="" data-src="media/City.jpg" width="714" height="378" uk-img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
