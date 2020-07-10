@@ -4,16 +4,16 @@
     <title>GearStorm Manual</title>
     <meta charset="utf-8">
     <meta content="GearStorm Manual" name="description">
-    <meta name="apple-mobile-web-app-title" content="GearStorm Manual">
-    <meta name="application-name" content="GearStorm Manual">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <base href="../..">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#242424">
+    <meta name="msapplication-config" content="/GearStorm/browserconfig.xml">
+    <meta name="theme-color" content="#242424">
+    <base href="../">
+    <link rel="apple-touch-icon" sizes="152x152" href="/GearStorm/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/GearStorm/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/GearStorm/favicon-16x16.png">
+    <link rel="manifest" href="/GearStorm/site.webmanifest">
+    <link rel="mask-icon" href="/GearStorm/safari-pinned-tab.svg" color="#f76f25">
+    <link rel="shortcut icon" href="/GearStorm/favicon.ico">
     <link href="css/GearStorm.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/uikit.min.js"></script>
@@ -37,19 +37,19 @@
                                     <a href="#">Game Basics</a>
                                     <div class="uk-navbar-dropdown">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="html/Game_Basics/Admin.html">Gamemaster</a></li>
-                                            <li><a href="html/Game_Basics/Building.html">Building</a></li>
-                                            <li><a href="html/Game_Basics/Crafting_Items.html">Crafting Items</a></li>
-                                            <li><a href="html/Game_Basics/Creatures.html">Creatures</a></li>
-                                            <li><a href="html/Game_Basics/Gear.html">Gear</a></li>
-                                            <li><a href="html/Game_Basics/Items.html">Items</a></li>
-                                            <li><a href="html/Game_Basics/Missions.html">Missions</a></li>
-                                            <li><a href="html/Game_Basics/Power_Armor.html">Power Armor</a></li>
-                                            <li><a href="html/Game_Basics/Quests.html">Quests</a></li>
-                                            <li><a href="html/Game_Basics/Resources.html">Resources</a></li>
-                                            <li><a href="html/Game_Basics/Vehicles.html">Vehicles</a></li>
-                                            <li><a href="html/Game_Basics/Weapons.html">Weapons</a></li>
-                                            <li><a href="html/Game_Basics/Zombies.html">Zombies</a></li>
+                                            <li><a href="Game_Basics/Admin.html">Gamemaster</a></li>
+                                            <li><a href="Game_Basics/Building.html">Building</a></li>
+                                            <li><a href="Game_Basics/Crafting_Items.html">Crafting Items</a></li>
+                                            <li><a href="Game_Basics/Creatures.html">Creatures</a></li>
+                                            <li><a href="Game_Basics/Gear.html">Gear</a></li>
+                                            <li><a href="Game_Basics/Items.html">Items</a></li>
+                                            <li><a href="Game_Basics/Missions.html">Missions</a></li>
+                                            <li><a href="Game_Basics/Power_Armor.html">Power Armor</a></li>
+                                            <li><a href="Game_Basics/Quests.html">Quests</a></li>
+                                            <li><a href="Game_Basics/Resources.html">Resources</a></li>
+                                            <li><a href="Game_Basics/Vehicles.html">Vehicles</a></li>
+                                            <li><a href="Game_Basics/Weapons.html">Weapons</a></li>
+                                            <li><a href="Game_Basics/Zombies.html">Zombies</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -57,9 +57,9 @@
                                     <a href="#">Guides</a>
                                     <div class="uk-navbar-dropdown">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="html/Guides/How_To_Play.html">How To Play</a></li>
-                                            <li><a href="html/Guides/Default_Keys.html">Default Keys</a></li>
-                                            <li><a href="html/Guides/Running_Server.html">Run Your Own Server</a></li>
+                                            <li><a href="Guides/How_To_Play.html">How To Play</a></li>
+                                            <li><a href="Guides/Default_Keys.html">Default Keys</a></li>
+                                            <li><a href="Guides/Running_Server.html">Run Your Own Server</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -72,7 +72,7 @@
                     <div class="uk-navbar-center-right">
                         <div>
                             <ul class="uk-navbar-nav">
-                                <li><a href="html/System_Requirements.html">System Requirements</a></li>
+                                <li><a href="System_Requirements.html">System Requirements</a></li>
                             </ul>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
         Stage usually has one or more player dialog Responses that may be available if certain conditions are met.
 
         To start, just Context Activate (Alt-E, or Alt-Middle Mouse) any Base Core and select Quests.<img
-            alt="" height="345" src="../../media/Missions_Quest_Editor.png" width="676"/>This will bring up the Quest
+            alt="" height="345" src="media/Missions_Quest_Editor.png" width="676"/>This will bring up the Quest
         Editor. Quests are made up of several components.
         <ol class="uk-list">
             <li>Name: The name of the Quest as displayed in Dialog</li>
@@ -119,7 +119,7 @@
         When a player initiates dialog. The player is presented with a list of quests to discuss with an NPC. This list
         is
         created based on the Quest Tags that match the NPCs Tags.
-        <img alt="" height="301" src="../../media/Missions_NPC_Tags.png" width="419"/>
+        <img alt="" height="301" src="media/Missions_NPC_Tags.png" width="419"/>
         Once the player picks a quest to
         discuss. The Quest Manager will evaluate each stage’s Condition until it finds
         one
