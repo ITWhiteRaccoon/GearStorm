@@ -6,6 +6,7 @@
 @mixin hook-base-code() {
   background    : $global-muted-background;
   border-radius : $border-rounded-border-radius;
+  color         : $global-muted-emphasis-color;
   padding       : 0 5px;
   white-space   : normal;
 }
